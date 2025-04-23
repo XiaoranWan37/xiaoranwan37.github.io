@@ -1,0 +1,5 @@
+---
+title: "Resume"
+---
+
+{{< pdf /resume/XiaoranWan_MSBAResume7.pdf width=100% height=800 >}}

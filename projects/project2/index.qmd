@@ -1,0 +1,16 @@
+---
+title: "Project 2"
+author: Xiaoran Wan
+date: today
+format:
+  html:
+    code-fold: true
+    code-tools: true
+jupyter: python3
+execute:
+  echo: true
+  eval: true
+  output: true
+  fig-format: png
+  dpi: 150
+---

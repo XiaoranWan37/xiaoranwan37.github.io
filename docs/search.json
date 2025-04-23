@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Xiaoran Wan",
+    "section": "",
+    "text": "University of California, San Diego | San Diego, CA\nMaster of Science in Business Analytics | July 2024 - December 2025\nWestern Washington University | Bellingham, WA\nB.A in Management Information Systems | Sept 2022 - June 2024"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Xiaoran Wan",
+    "section": "",
+    "text": "University of California, San Diego | San Diego, CA\nMaster of Science in Business Analytics | July 2024 - December 2025\nWestern Washington University | Bellingham, WA\nB.A in Management Information Systems | Sept 2022 - June 2024"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Download PDF file."
+  },
+  {
+    "objectID": "projects/project1/index.html",
+    "href": "projects/project1/index.html",
+    "title": "Project 1",
+    "section": "",
+    "text": "Exploring mpg and disp in mtcars Dataset\nLet’s investigate the relationship between fuel efficiency (mpg) and engine displacement (disp) from the mtcars dataset.\n\n\nCode\nimport pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Load mtcars dataset\nmtcars = sns.load_dataset('mpg').dropna()\n\n# Plot\nplt.figure(figsize=(8, 5))\nsns.scatterplot(data=mtcars, x='mpg', y='displacement', color='orchid')\nplt.title(\"MPG vs Displacement\")\nplt.xlabel(\"Miles per Gallon (mpg)\")\nplt.ylabel(\"Engine Displacement (disp)\")\nplt.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "My Projects",
+    "section": "",
+    "text": "Project 1\n\n\n\n\n\n\nXiaoran Wan\n\n\nApr 23, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nProject 2\n\n\n\n\n\n\nXiaoran Wan\n\n\nApr 23, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+  }
+]
