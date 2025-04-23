@@ -13,14 +13,10 @@ about:
       href: "https://github.com/XiaoranWan37?tab=repositories"
 ---
 
-## Education
-
 University of California, San Diego | San Diego, CA
 
-Master of Science in Business Analytics | July 2024 - December 2025
+M.S. in Business Analytics
 
 Western Washington University | Bellingham, WA
 
-B.A in Management Information Systems | Sept 2022 - June 2024
-
----
+B.A. in Management Information Systems
