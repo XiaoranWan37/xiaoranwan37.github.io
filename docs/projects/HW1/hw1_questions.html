@@ -245,7 +245,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>The amount donated (both conditional and unconditional on giving)</p></li>
 </ul>
 <p>The data is loaded as follows:</p>
-<div id="c0611171" class="cell" data-execution_count="1">
+<div id="42a6e680" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_stata(<span class="st">"karlan_list_2007.dta"</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -675,7 +675,7 @@ Variable Definitions
 <li>The regression coefficient on <code>treatment</code> equals the difference in group means.</li>
 <li>The t-statistic and p-value from the regression match the outputs of the t-test.</li>
 </ul>
-<div id="274f1c84" class="cell" data-execution_count="2">
+<div id="51747ef8" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.formula.api <span class="im">as</span> smf</span>
@@ -778,7 +778,7 @@ Variable Definitions
 <p>First, I analyze whether matched donations lead to an increased response rate of making a donation.</p>
 <section id="visual-comparison-of-donation-rates-between-treatment-and-control-groups" class="level4">
 <h4 class="anchored" data-anchor-id="visual-comparison-of-donation-rates-between-treatment-and-control-groups"><strong>3. Visual Comparison of Donation Rates Between Treatment and Control Groups</strong></h4>
-<div id="c91e1d82" class="cell" data-execution_count="3">
+<div id="73a2af05" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -818,7 +818,7 @@ Variable Definitions
 </section>
 <section id="estimating-the-effect-of-treatment-on-donation-likelihood-using-t-test-and-regression" class="level4">
 <h4 class="anchored" data-anchor-id="estimating-the-effect-of-treatment-on-donation-likelihood-using-t-test-and-regression"><strong>4. Estimating the Effect of Treatment on Donation Likelihood Using T-Test and Regression</strong></h4>
-<div id="4855d2d5" class="cell" data-execution_count="4">
+<div id="a11f9496" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.formula.api <span class="im">as</span> smf</span>
@@ -886,7 +886,7 @@ Variable Definitions
 </section>
 <section id="replicating-table-3-with-a-probit-model-of-donation-likelihood" class="level4">
 <h4 class="anchored" data-anchor-id="replicating-table-3-with-a-probit-model-of-donation-likelihood"><strong>5. Replicating Table 3 with a Probit Model of Donation Likelihood</strong></h4>
-<div id="f2592ec1" class="cell" data-execution_count="5">
+<div id="9e8b2328" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -915,7 +915,7 @@ Dep. Variable:                   gave   No. Observations:                50083
 Model:                         Probit   Df Residuals:                    50081
 Method:                           MLE   Df Model:                            1
 Date:                Wed, 23 Apr 2025   Pseudo R-squ.:               0.0009783
-Time:                        16:58:43   Log-Likelihood:                -5030.5
+Time:                        17:16:45   Log-Likelihood:                -5030.5
 converged:                       True   LL-Null:                       -5035.4
 Covariance Type:            nonrobust   LLR p-value:                  0.001696
 ==============================================================================
@@ -941,7 +941,7 @@ treatment      0.0868      0.028      3.113      0.002       0.032       0.141
 <section id="testing-whether-larger-match-ratios-increase-donation-rates" class="level4">
 <h4 class="anchored" data-anchor-id="testing-whether-larger-match-ratios-increase-donation-rates"><strong>6. Testing Whether Larger Match Ratios Increase Donation Rates</strong></h4>
 <p>To examine whether the size of the match ratio affects donor response rates, I conduct a series of two-sample t-tests comparing the proportion of people who donated across three treatment arms: 1:1, 2:1, and 3:1 match ratios.</p>
-<div id="107a8886" class="cell" data-execution_count="6">
+<div id="a5562578" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy.stats <span class="im">as</span> stats</span>
@@ -1022,7 +1022,7 @@ treatment      0.0868      0.028      3.113      0.002       0.032       0.141
 <section id="regression-on-match-ratios" class="level4">
 <h4 class="anchored" data-anchor-id="regression-on-match-ratios"><em>Regression on Match Ratios</em></h4>
 <p>To complement the t-test comparison, I assess the effect of match ratio size using a regression approach. Specifically, I treat the 1:1 match group as the baseline and create dummy variables for the 2:1 and 3:1 match groups.</p>
-<div id="f62652a6" class="cell" data-execution_count="7">
+<div id="150ace44" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.formula.api <span class="im">as</span> smf</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1045,7 +1045,7 @@ Dep. Variable:                   gave   R-squared:                       0.000
 Model:                            OLS   Adj. R-squared:                 -0.000
 Method:                 Least Squares   F-statistic:                    0.6454
 Date:                Wed, 23 Apr 2025   Prob (F-statistic):              0.524
-Time:                        16:58:43   Log-Likelihood:                 16688.
+Time:                        17:16:45   Log-Likelihood:                 16688.
 No. Observations:               33396   AIC:                        -3.337e+04
 Df Residuals:                   33393   BIC:                        -3.334e+04
 Df Model:                           2                                         
@@ -1083,7 +1083,7 @@ Notes:
 <h4 class="anchored" data-anchor-id="response-rate-differences-by-match-ratio"><em>Response Rate Differences by Match Ratio</em></h4>
 <p>To further explore whether the size of the match ratio affects donation behavior, I compare response rates directly from the data and indirectly via regression coefficients.</p>
 <p>I calculate the observed response rate for each match ratio group:</p>
-<div id="fe0fd38e" class="cell" data-execution_count="8">
+<div id="8277bfff" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute mean response rate by match ratio</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>response_rates <span class="op">=</span> df_matched.groupby(<span class="st">"ratio"</span>)[<span class="st">"gave"</span>].mean().<span class="bu">round</span>(<span class="dv">4</span>)</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>response_rates_df <span class="op">=</span> response_rates.reset_index().rename(columns<span class="op">=</span>{<span class="st">"gave"</span>: <span class="st">"Response Rate"</span>, <span class="st">"ratio"</span>: <span class="st">"Match Ratio"</span>})</span>
@@ -1141,7 +1141,7 @@ Notes:
 <p>In this subsection, I analyze the effect of the size of matched donation on the size of the charitable contribution.</p>
 <section id="estimating-the-impact-of-treatment-on-donation-amount-using-t-test-and-regression" class="level4">
 <h4 class="anchored" data-anchor-id="estimating-the-impact-of-treatment-on-donation-amount-using-t-test-and-regression"><strong>9. Estimating the Impact of Treatment on Donation Amount Using T-Test and Regression</strong></h4>
-<div id="fb0de60c" class="cell" data-execution_count="9">
+<div id="b8d31a20" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.formula.api <span class="im">as</span> smf</span>
@@ -1210,7 +1210,7 @@ Notes:
 <section id="size-of-charitable-contribution-conditional-on-donating" class="level4">
 <h4 class="anchored" data-anchor-id="size-of-charitable-contribution-conditional-on-donating"><em>Size of Charitable Contribution (Conditional on Donating)</em></h4>
 <p>To analyze how treatment affects donation size conditional on giving, I restrict the dataset to individuals who made a positive donation, and repeat the t-test and linear regression.</p>
-<div id="2d2c48d4" class="cell" data-execution_count="10">
+<div id="c6f2fc4c" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.formula.api <span class="im">as</span> smf</span>
@@ -1277,7 +1277,7 @@ Notes:
 </section>
 <section id="visualizing-donation-distributions-and-mean-amounts-for-treatment-vs.-control-groups" class="level4">
 <h4 class="anchored" data-anchor-id="visualizing-donation-distributions-and-mean-amounts-for-treatment-vs.-control-groups"><strong>11. Visualizing Donation Distributions and Mean Amounts for Treatment vs.&nbsp;Control Groups</strong></h4>
-<div id="b22ecbe1" class="cell" data-execution_count="11">
+<div id="6b4d67c6" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -1338,7 +1338,7 @@ Notes:
 <h3 class="anchored" data-anchor-id="law-of-large-numbers">Law of Large Numbers</h3>
 <section id="simulating-the-law-of-large-numbers-cumulative-averages-converge-toward-true-treatment-effect" class="level4">
 <h4 class="anchored" data-anchor-id="simulating-the-law-of-large-numbers-cumulative-averages-converge-toward-true-treatment-effect"><strong>12. Simulating the Law of Large Numbers: Cumulative Averages Converge Toward True Treatment Effect</strong></h4>
-<div id="fc53b1f3" class="cell" data-execution_count="12">
+<div id="f6f03288" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1385,7 +1385,7 @@ Notes:
 <h3 class="anchored" data-anchor-id="central-limit-theorem">Central Limit Theorem</h3>
 <section id="visualizing-the-central-limit-theorem-sampling-distributions-become-more-normal-with-larger-samples" class="level4">
 <h4 class="anchored" data-anchor-id="visualizing-the-central-limit-theorem-sampling-distributions-become-more-normal-with-larger-samples"><strong>13. Visualizing the Central Limit Theorem: Sampling Distributions Become More Normal with Larger Samples</strong></h4>
-<div id="ebc42af1" class="cell" data-execution_count="13">
+<div id="ea98d0fe" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
